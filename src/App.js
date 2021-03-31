@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import NewMessageForm from "./NewMessageForm";
 
 const App = () => {
     return (
         <div className="app">
-            Hello TDD!
+            <NewMessageForm />
         </div>
     );
 }
