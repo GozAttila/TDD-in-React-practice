@@ -10,8 +10,8 @@ const NewMessageForm = ({onSend}) => {
     }
 
     const handleSend = () => {
-        setInputText('')
         onSend(inputText)
+        setInputText('')
     }
 
     return (

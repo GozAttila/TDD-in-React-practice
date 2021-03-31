@@ -3,10 +3,12 @@ import './App.css';
 import NewMessageForm from "./NewMessageForm";
 
 const App = () => {
-    const handleSend = newMessage => {}
+    const handleSend = newMessage => {
+        console.log('msg', newMessage)
+    }
     return (
         <div className="app">
-            <NewMessageForm onSend={handleSend()}/>
+            <NewMessageForm onSend={handleSend}/>
         </div>
     );
 }

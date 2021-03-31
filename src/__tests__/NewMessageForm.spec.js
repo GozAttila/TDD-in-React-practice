@@ -7,11 +7,11 @@ describe('<NewMessageForm />', () => {
     let getByTestId;
 
     describe('clicking the send button', () => {
-        let sendHandler
+        let sendHandler;
 
         beforeEach(async () => {
-            sendHandler = jest.fn().mockName('sendHandler')
-            ({ getByTestId } = render(<NewMessageForm onSend={sendHandler}/>));
+            sendHandler = jest.fn().mockName('sendHandler');
+            ({ getByTestId } = render(<NewMessageForm onSend={sendHandler} />));
 
             await userEvent.type(
                 getByTestId('messageText'),
